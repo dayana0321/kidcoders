@@ -1,0 +1,43 @@
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  
+}
+ion-content{
+  --background: none;
+  //background-image: url('../../assets/background.jpg');/* linear-gradient(to bottom, #444ed4, #cf4b94);*/
+  background-color: #fff;
+  //background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
+  //background-repeat: no-repeat;
+  font-family:'Roboto', sans-serif;
+}
+
+
+ion-button{
+  --background:linear-gradient(to bottom,#FBB23F, #FF8A42) ;
+  //background: linear-gradient(to bottom,#FBB23F, #FF8A42) ;
+  --border-radius: 25px;
+}
+
+#container h2 {
+  font-size: 25px;
+  color: #FF8A42;
+  line-height: 22px;
+  font-weight: bold;
+  
+}
+
+#container p {
+  font-size: 24px;
+  line-height: 22px;
+  color: #FF8A42;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}

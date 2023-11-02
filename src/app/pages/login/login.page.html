@@ -1,0 +1,39 @@
+
+<ion-content class="ion-padding">
+  <ion-buttons slot="start">
+    <ion-back-button routerLink="/home"></ion-back-button>
+  </ion-buttons>
+  <div class="flex-center">
+    <ion-card>
+      <ion-card-header>
+        <ion-icon name="star"></ion-icon>
+        <ion-card-title>Inicia Sesión</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="stacked">Usuario</ion-label>
+          <ion-input [(ngModel)]="usuario" 
+          type="text" 
+          name="usuario"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="stacked">Contraseña</ion-label>
+          <ion-input [(ngModel)]="contrasena" type="password" name="contrasena"></ion-input>
+        </ion-item>
+  
+        <ion-button (click)="iniciarSesion()">
+          Continuar
+        </ion-button>
+      </ion-card-content>
+ 
+    </ion-card>
+  </div>
+  <div class="evaluacion-result">
+    
+    <ion-icon *ngIf="!logueado" name="close-circle" color="danger" class="evaluacion-icon"></ion-icon>
+     
+     <p *ngIf="!logueado" class="evaluacion-message">Credenciales incorrectas</p>
+  </div>
+</ion-content>

@@ -1,0 +1,50 @@
+ion-toolbar{
+    --background: #fff;
+}
+
+ion-title{
+    font-size: 15px;
+    text-align: center;
+    color: #FF8A42;
+}
+  
+  ion-icon,
+  ion-menu-button,
+  ion-back-button{
+    color: #FF8A42;
+}
+
+
+ion-content{
+    --background: #fff;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    font-family:'Roboto', sans-serif; 
+}
+
+ion-card-title{
+    font-size: 20px;
+    text-align: center;
+    color: #FF8A42;
+}
+
+ion-card-subtitle{
+    text-align: center;
+}
+
+ion-list{
+    background:#fff;
+}
+
+ion-card{
+    --background:#fff;
+    box-shadow: none;
+}
+
+ion-item {
+    --background:#fff;
+    --padding-start: 0;
+    
+}

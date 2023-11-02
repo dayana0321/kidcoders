@@ -1,0 +1,120 @@
+<ion-header>
+  <!-- Encabezado con el título de la evaluación -->
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/lessonscourse1"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="assessment-title">Evaluación 1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!-- Pregunta 1 -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Pregunta 1: ¿Qué es la programación?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-radio-group [(ngModel)]="respuestas[0]" (ionChange)="manejarRespuestaSeleccionada(0)">
+        <ion-item>
+          <ion-label class="custom-label">Hablar con tus amigos</ion-label>
+          <ion-radio slot="start" value="incorrect"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label class="custom-label">Dar órdenes a una computadora</ion-label>
+          <ion-radio slot="start" value="correct"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Pregunta 2 -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Pregunta 2: ¿Qué es programar como dar instrucciones?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-radio-group [(ngModel)]="respuestas[1]" (ionChange)="manejarRespuestaSeleccionada(1)">
+        <ion-item>
+          <ion-label class="custom-label">Contar chistes</ion-label>
+          <ion-radio slot="start" value="incorrect"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label class="custom-label">Instruir a la computadora paso a paso</ion-label>
+          <ion-radio slot="start" value="correct"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Pregunta 3 -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Pregunta 3: ¿Qué se puede hacer con la programación?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-radio-group [(ngModel)]="respuestas[2]" (ionChange)="manejarRespuestaSeleccionada(2)">
+        <ion-item>
+          <ion-label class="custom-label">Comer helado</ion-label>
+          <ion-radio slot="start" value="incorrect"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label class="custom-label">Crear juegos y aplicaciones</ion-label>
+          <ion-radio slot="start" value="correct"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Pregunta 4 -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Pregunta 4: ¿Qué se asemeja a la programación?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-radio-group [(ngModel)]="respuestas[3]" (ionChange)="manejarRespuestaSeleccionada(3)">
+        <ion-item>
+          <ion-label class="custom-label">Escuchar música</ion-label>
+          <ion-radio slot="start" value="incorrect"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label class="custom-label">Hacer magia</ion-label>
+          <ion-radio slot="start" value="correct"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Pregunta 5 -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Pregunta 5: ¿Cómo ayudan los programadores en la vida real?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-radio-group [(ngModel)]="respuestas[4]" (ionChange)="manejarRespuestaSeleccionada(4)">
+        <ion-item>
+          <ion-label class="custom-label"> Haciendo música</ion-label>
+          <ion-radio slot="start" value="incorrect"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label class="custom-label">Creando juegos</ion-label>
+          <ion-radio slot="start" value="correct"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Botón de envío -->
+  <ion-button (click)="evaluarResultado()">Enviar Respuestas</ion-button>
+  <!-- Agrega esto en tu HTML donde desees mostrar el confeti -->
+
+  <div class="evaluacion-result">
+    <ion-icon *ngIf="ganarCurso" name="checkmark-circle" color="success" class="evaluacion-icon"></ion-icon>
+    <ion-icon *ngIf="!ganarCurso" name="close-circle" color="danger" class="evaluacion-icon"></ion-icon>
+     <p *ngIf="ganarCurso" class="evaluacion-message">!Felicidades has aprobado la evaluación!</p>
+     <p *ngIf="!ganarCurso" class="evaluacion-message">Lo siento, sigue practicando</p>
+  </div>
+  
+  
+
+</ion-content>

@@ -1,0 +1,55 @@
+<ion-menu side="start" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <ion-item (click)="navigateTo('perfil')">
+        <ion-icon name="person"></ion-icon>
+        <ion-label>Perfil</ion-label>
+      </ion-item>
+
+      <ion-item (click)="logout()">
+        <ion-icon name="log-out"></ion-icon>
+        <ion-label>Cerrar Sesión</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+
+<ion-content id="main-content" class="ion-padding">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>KidCoders</ion-title>
+    <ion-buttons slot="secondary">
+    <ion-button routerLink="/profile">
+      <ion-icon slot="icon-only" name="person-circle" ></ion-icon>
+    </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+
+    <ion-title>Cursos Disponibles</ion-title>
+
+    <ion-card *ngFor="let curso of cursos.data">
+    <img alt="Silhouette of mountains" src="../../../assets/intro.PNG" />
+    <ion-card-header>
+      <ion-card-title>{{curso.attributes.curso_nombre}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      {{curso.attributes.curso_descripcion}}
+    </ion-card-content>
+
+    <ion-button color="secondary" (click)="getCourseById(curso.attributes.curso_id)">Iniciar</ion-button>
+  </ion-card>
+
+</ion-content>
+
+

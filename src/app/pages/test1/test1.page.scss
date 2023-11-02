@@ -1,0 +1,100 @@
+/* Estilo del título de la evaluación */
+ion-toolbar{
+    --background:#FF8A42;
+}
+
+ion-back-button{
+  color: #fff;
+}
+
+ion-title{
+    font-size: 15px;
+    text-align: center;
+    color: #FF8A42;
+}
+.assessment-title {
+    font-size: 20px;
+    color: #fff; 
+    text-align: center;
+  }
+ion-content{
+    --background:#fff;
+}
+
+  /* Estilo de las tarjetas de preguntas */
+  ion-card {
+    background-color: #fff; /* Rosa */
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Estilo de los títulos de las preguntas */
+  ion-card-title {
+    font-size: 14px;
+    color:#FF8A42; /* Azul claro */
+  }
+  
+  /* Estilo de las respuestas */
+  ion-item {
+    --background:#fff;
+    color:#888787;
+    --inner-padding-end: 10p    x; /* Espaciado del final de las respuestas */
+  }
+  
+  /* Personaliza los ion-radio */
+ion-radio {
+  --border-color: #7382E6;      /* Color del borde */
+  --inner-background: #7382E6;  /* Color de fondo interno */
+  --icon-background: #ffffff;   /* Color de fondo del icono (círculo) */
+  --icon-checked-background: #FC72ED; /* Color de fondo del icono cuando está seleccionado */
+  --color: #000000; /* Color del icono (círculo) cuando no está seleccionado */
+}
+
+/* Aplicar estilos solo a ion-label con la clase "custom-label" */
+ion-label.custom-label {
+  font-size: 13px; /* Tamaño de fuente deseado */
+}
+
+
+/* Personaliza el color del ícono de selección cuando el ion-radio está seleccionado */
+ion-radio[aria-checked=true] {
+  --icon-background: #FC72ED; /* Color de fondo del icono (círculo) cuando está seleccionado */
+  --color: #ffffff; /* Color del icono (círculo) cuando está seleccionado */
+}
+
+  /* Estilo del botón de envío */
+  ion-button {
+    --background: #7382E6;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .felicitacion-card {
+    text-align: center;
+    margin: 10px;
+    background-color: #00ff00; /* Fondo verde para felicitaciones */
+  }
+
+  evaluacion-result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .evaluacion-icon {
+    font-size: 43px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  .evaluacion-message {
+    font-size: 14px;
+    color: #333; /* Color de texto personalizado */
+    text-align: center;
+  }
+  
+
+  

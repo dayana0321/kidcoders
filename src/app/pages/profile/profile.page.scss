@@ -1,0 +1,84 @@
+ion-content{
+    --background: #fff;
+
+    font-family:'Roboto', sans-serif;
+    
+  
+}
+
+ion-toolbar{
+  --background: #fff;
+}
+ion-title{
+    font-size: 15px;
+    text-align: center;
+    color: #FF8A42;
+  }
+  
+  ion-icon,
+  ion-menu-button{
+    color: #FF8A42;
+  }
+
+  ion-item{
+    --background:#fff;
+    margin-top: 40px;
+    color: #FF8A42;
+  }
+
+  .profile-container {
+    --background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .profile-image {
+    width: 70px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: 70px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    border-radius: 100%; /* Crea un borde redondeado para la imagen */
+  }
+  
+  .student-name {
+    margin-top: 20px; /* Ajusta el espacio entre la imagen y el nombre */
+    font-size: 15px; /* Ajusta el tamaño del texto según tus necesidades */
+    color: #FF8A42;
+  }
+  
+  .progress-container {
+    text-align: center;
+  }
+  
+  .progress-label {
+    font-size: 15px;
+    color: #FF8A42;
+  }
+  
+  .progress-bar {
+    width: 100%; /* Ajusta el ancho de la barra de progreso según tus necesidades */
+  }
+
+  p{
+    margin-top: 20px; /* Ajusta el espacio entre la imagen y el nombre */
+    font-size: 15px; /* Ajusta el tamaño del texto según tus necesidades */
+    color: #FF8A42;
+  }
+
+  ion-list{
+    background:#fff;
+  }
+
+  ion-item {
+    display: flex;
+    align-items: center;
+    
+   .download-icon{
+    align-items: center;
+   }
+    
+    ion-label {
+      font-size: 13px;
+    }
+  }
+

@@ -1,0 +1,31 @@
+<ion-header>
+  <!-- Encabezado con un botón de retroceso y el título de la lección -->
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/lessonscourse4"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="lesson-title">{{lecciones.leccion_titulo}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content class="ion-padding" >
+  <ng-container>
+  <!-- Contenido multimedia (imagen o video) -->
+  <div class="lesson-media">
+    <!-- Aquí puedes insertar la imagen o el reproductor de video -->
+    <img src="../../../assets/Problema.png" alt="Imagen de prueba">
+  </div>
+ 
+  <!-- Contenido de la lección -->
+  <div class="lesson-content">
+    <h2>Contenido de la Lección</h2>
+    <p>
+        {{lecciones.leccion_info}}
+    </p>
+    <!-- Agrega más contenido de la lección aquí -->
+  </div>
+
+  <!-- Botones de interacción -->
+  <ion-button expand="full" routerLink="/test4">Siguiente</ion-button>
+  </ng-container>
+</ion-content>
